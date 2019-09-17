@@ -15,7 +15,9 @@ const user = require('../../models/User');
 router.post(
   '/',
   [
-    check('name', 'Name is required').isLength({ min: 1 }),
+    check('name', 'Name is required')
+      .not()
+      .isEmpty(),
     check('email', 'Please include a valid email').isEmail(),
     check(
       'password',
