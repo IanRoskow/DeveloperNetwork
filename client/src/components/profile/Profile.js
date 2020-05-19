@@ -6,8 +6,10 @@ import ProfileTop from './ProfileTop';
 import ProfileAbout from './ProfileAbout';
 import ProfileExperience from './ProfileExperience';
 import ProfileEducation from './ProfileEducation';
+import ProfileGithub from './ProfileGithub';
 import { Link } from 'react-router-dom';
 import { getProfileById } from '../../actions/profile';
+import { profile_url } from 'gravatar';
 
 const Profile = ({
   getProfileById,
@@ -75,6 +77,9 @@ const Profile = ({
                 <h4>No education credentials</h4>
               )}
             </div>
+            {profile.githubusername && (
+              <ProfileGithub username={profile.githubusername} />
+            )}
           </div>
         </Fragment>
       )}
