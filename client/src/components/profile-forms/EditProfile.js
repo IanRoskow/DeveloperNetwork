@@ -36,6 +36,9 @@ const EditProfile = ({
       if (social.includes(key)) {
         preFormData[key] =
           loading || !profile.social ? '' : profile.social[key];
+      } else if (key === 'skills') {
+        preFormData[key] =
+          loading || !profile[key] ? '' : profile[key].join(',');
       } else {
         preFormData[key] = loading || !profile[key] ? '' : profile[key];
       }
@@ -68,9 +71,9 @@ const EditProfile = ({
   };
   return (
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
+      <h1 className='large text-primary'>Edit Your Profile</h1>
       <p className='lead'>
-        <i className='fa fa-user'></i> Let's get some information to make your
+        <i className='fa fa-user'></i> Update your information to make your
         profile stand out
       </p>
       <small>* = required field</small>
