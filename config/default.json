@@ -1,6 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://devRoskow:y4dLp6y9677Jnkb@cluster0-f1thx.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "y4dLp6y9677Jnkb",
+  "mongoURI": "mongodb+srv://devRoskow:PMhX9ZntprDKqQER@cluster0-f1thx.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "PMhX9ZntprDKqQER",
   "githubClientId": "ac18e293556a3f2c1c57",
   "githubSecret": "4ebde2895a4492bbbdb2a41b241a3103e49fac04"
 }
